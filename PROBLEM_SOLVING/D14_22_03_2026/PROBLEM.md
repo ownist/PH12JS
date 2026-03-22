@@ -28,7 +28,7 @@
 
 - Array unsorted হতে পারে
 - Number সবসময় positive (1 → n)
-- Number সবসময় positive (1 → n)
+- শুধু একটাই missing number থাকবে
 
 #
 
