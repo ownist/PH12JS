@@ -1,7 +1,6 @@
 # B12JS - JavaScript Course (Central Code Repository)
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/ownist/B12JS)
-![GitHub License](https://img.shields.io/github/license/ownist/B12JS)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ownist/B12JS)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ownist/B12JS)
 ![GitHub contributors](https://img.shields.io/github/contributors/ownist/B12JS)
