@@ -30,7 +30,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-[#1C1C1E] text-white w-full h-screen">
+  <body class="bg-[#1C1C1E] text-white w-full min-h-dvh">
     <!-- header -->
     <div
       class="flex items-center justify-between px-4 py-4 border-b border-b-zinc-800"
@@ -117,6 +117,92 @@
           <span class="text-sm font-normal text-zinc-400">Transactions</span>
         </div>
       </div>
+    </section>
+
+    <!-- action section -->
+    <section class="px-4 py-10">
+      <h1 class="text-lg font-semibold mb-4">Add Money</h1>
+
+      <!-- form -->
+      <form action="#" class="space-y-4">
+        <!-- input group -->
+        <div class="flex flex-col space-y-3">
+          <label
+            for="bankAccountNumber"
+            class="text-zinc-400 text-base font-medium"
+            >Bank Account Number</label
+          >
+          <input
+            class="text-zinc-300 text-base w-full font-light px-5 py-4 bg-zinc-800 rounded-lg outline-none border-none focus:bg-zinc-700"
+            type="number"
+            name="bankAccountNumber"
+            id="bankAccountNumber"
+            placeholder="Enter 11 digit account number"
+            required
+          />
+        </div>
+
+        <div class="flex flex-col space-y-3">
+          <label for="ammountToAdd" class="text-zinc-400 text-base font-medium"
+            >Amount to Add</label
+          >
+          <input
+            class="text-zinc-300 text-base w-full font-light px-5 py-4 bg-zinc-800 rounded-lg outline-none border-none focus:bg-zinc-700"
+            type="number"
+            name="ammountToAdd"
+            id="ammountToAdd"
+            placeholder="Add Amount to withdraw"
+            required
+          />
+        </div>
+
+        <div class="flex flex-col space-y-3">
+          <label for="pin" class="text-zinc-400 text-base font-medium"
+            >Select A Bank</label
+          >
+          <select
+            name="selecBank"
+            id="selecBank"
+            class="text-zinc-300 text-base w-full font-light px-5 py-4 bg-zinc-800 rounded-lg outline-none border-none focus:bg-zinc-700 appearance-none"
+          >
+            <option value="select" disabled selected>Select a Bank</option>
+            <option value="dbb">Douch Bangla Bank</option>
+            <option value="islami">Islami Bank</option>
+          </select>
+
+          <!-- <input
+            class="text-zinc-300 text-base w-full font-light px-5 py-4 bg-zinc-800 rounded-lg outline-none border-none focus:bg-zinc-700"
+            type="number"
+            name="pin"
+            id="pin"
+            placeholder="Enter 4 Digit Pin"
+            required
+          /> -->
+        </div>
+
+        <div class="flex flex-col space-y-3">
+          <label for="pinNumber" class="text-zinc-400 text-base font-medium"
+            >Pin Number</label
+          >
+          <input
+            class="text-zinc-300 text-base w-full font-light px-5 py-4 bg-zinc-800 rounded-lg outline-none border-none focus:bg-zinc-700"
+            type="number"
+            name="pinNumber"
+            id="pinNumber"
+            placeholder="Enter 4 digit pin number"
+            required
+          />
+        </div>
+
+        <!-- login btn -->
+        <button
+          type="submit"
+          id="btnContinue"
+          class="text-base font-normal w-full px-4 py-3.5 bg-white text-zinc-900 rounded-[30px]"
+        >
+          Add Money
+        </button>
+      </form>
     </section>
   </body>
 </html>
