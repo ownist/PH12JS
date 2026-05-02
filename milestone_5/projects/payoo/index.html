@@ -21,8 +21,54 @@
       type="text/css"
     />
   </head>
-  <body class="bg-[#1C1C1E] w-full min-h-dvh text-white">
-    <h1>payoo</h1>
+  <body
+    class="bg-[#1C1C1E] w-full h-dvh flex items-center justify-center text-white"
+  >
+    <section class="w-full p-4 space-y-5 sm:hidden">
+      <!-- logo -->
+      <div class="text-center text-3xl font-normal">
+        <span>Payoo</span>
+      </div>
+
+      <!-- form -->
+      <form action="#" class="space-y-4">
+        <!-- input group -->
+        <div class="flex flex-col space-y-3">
+          <label for="phone" class="text-zinc-400 text-base font-medium"
+            >Mobile Number</label
+          >
+          <input
+            class="text-zinc-300 text-base w-full font-light px-5 py-4 bg-zinc-800 rounded-lg outline-none border-none focus:bg-zinc-700"
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="Enter your number"
+            required
+          />
+        </div>
+        <div class="flex flex-col space-y-3">
+          <label for="pin" class="text-zinc-400 text-base font-medium"
+            >4 Digit Pin</label
+          >
+          <input
+            class="text-zinc-300 text-base w-full font-light px-5 py-4 bg-zinc-800 rounded-lg outline-none border-none focus:bg-zinc-700"
+            type="number"
+            name="pin"
+            id="pin"
+            placeholder="Enter 4 Digit Pin"
+            required
+          />
+        </div>
+
+        <!-- login btn -->
+        <button
+          type="submit"
+          class="text-base font-normal w-full px-4 py-3.5 bg-[#0a84ff] rounded-[30px]"
+        >
+          Continue
+        </button>
+      </form>
+    </section>
 
     <!-- connect js file -->
     <script src="./js/main.js"></script>
