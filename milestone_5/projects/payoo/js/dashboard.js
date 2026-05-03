@@ -39,3 +39,22 @@ document.getElementById("cashoutBtn").addEventListener("click", function () {
   document.getElementById("addMoneyContainer").style.display = "none";
   document.getElementById("cashoutContainer").style.display = "block";
 });
+
+// cashout
+document.getElementById("btnWithdraw").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const agentNumber = document.getElementById("agentNumber").value;
+  const cashoutAmmount =
+    document.getElementById("cashoutAmmount").valueAsNumber;
+  const cashoutPinNumber =
+    document.getElementById("cashoutPinNumber").valueAsNumber;
+  const totalbalance = parseInt(
+    document.getElementById("totalbalance").innerText,
+  );
+
+  const presentAmmount = totalbalance - cashoutAmmount;
+
+  // set present ammount
+  document.getElementById("totalbalance").innerText = presentAmmount;
+});
