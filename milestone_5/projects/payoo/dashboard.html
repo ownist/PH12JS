@@ -202,34 +202,66 @@
       </section>
 
       <!-- cashout section -->
-      <section id="cashoutContainer" class="px-4 py-10">
+      <section id="cashoutContainer" class="px-4 py-10 hidden">
         <h1 class="text-lg font-semibold mb-4">Cash Out</h1>
         <!-- form -->
         <form action="#" class="space-y-4">
           <!-- input group -->
           <div class="flex flex-col space-y-3">
-            <label
-              for="bankAccountNumber"
-              class="text-zinc-400 text-base font-medium"
-              >Bank Account Number</label
+            <label for="agentNumber" class="text-zinc-400 text-base font-medium"
+              >Agent Number</label
             >
             <input
               class="text-zinc-300 text-base w-full font-light px-5 py-4 bg-zinc-800 rounded-lg outline-none border-none focus:bg-zinc-700"
               type="number"
-              name="bankAccountNumber"
-              id="bankAccountNumber"
+              name="agentNumber"
+              id="agentNumber"
               placeholder="Enter 11 digit account number"
               required
             />
           </div>
 
-          <!-- btn -->
+          <!-- input group -->
+          <div class="flex flex-col space-y-3">
+            <label
+              for="cashoutAmmount"
+              class="text-zinc-400 text-base font-medium"
+              >Amount</label
+            >
+            <input
+              class="text-zinc-300 text-base w-full font-light px-5 py-4 bg-zinc-800 rounded-lg outline-none border-none focus:bg-zinc-700"
+              type="number"
+              name="cashoutAmmount"
+              id="cashoutAmmount"
+              placeholder="Enter amount to withdraw"
+              required
+            />
+          </div>
+
+          <!-- input group -->
+          <div class="flex flex-col space-y-3">
+            <label
+              for="cashoutPinNumber"
+              class="text-zinc-400 text-base font-medium"
+              >Pin Number</label
+            >
+            <input
+              class="text-zinc-300 text-base w-full font-light px-5 py-4 bg-zinc-800 rounded-lg outline-none border-none focus:bg-zinc-700"
+              type="number"
+              name="cashoutPinNumber"
+              id="cashoutPinNumber"
+              placeholder="Enter 4 digit pin number"
+              required
+            />
+          </div>
+
+          <!-- withdraw btn -->
           <button
             type="submit"
-            id="btnAddMoney"
+            id="btnWithdraw"
             class="text-base font-normal w-full px-4 py-3.5 bg-white text-zinc-900 rounded-[30px]"
           >
-            Cashout
+            Withdraw Money
           </button>
         </form>
       </section>
