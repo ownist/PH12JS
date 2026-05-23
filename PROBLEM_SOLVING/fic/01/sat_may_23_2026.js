@@ -20,3 +20,13 @@ function largestNumber(arr) {
 }
 
 console.log(largestNumber([2, 5, 8, 9, 6, 5, 8]));
+
+console.log("\n"); // for new empty line
+
+// check even or odd
+function checkEvenOrOdd(num) {
+  if (num % 2 === 0) return `${num} is even.`;
+  return `${num} is odd.`;
+}
+
+console.log(checkEvenOrOdd(52));
