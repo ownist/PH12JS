@@ -45,3 +45,26 @@ function countChar(str) {
 }
 
 console.log(countChar("shahed"));
+
+console.log("\n");
+
+// find most freq numbers
+function findMostFreqNumbers(nums) {
+  const freqNums = {};
+
+  for (const n of nums) {
+    freqNums[n] = (freqNums[n] || 0) + 1;
+  }
+
+  let largestFreqNumber = 0;
+
+  for (const key in freqNums) {
+    if (freqNums[key] > largestFreqNumber) {
+      largestFreqNumber = freqNums[key];
+    }
+  }
+
+  return largestFreqNumber;
+}
+const input = [5, 5, 5, 2, 2];
+console.log(findMostFreqNumbers(input));
