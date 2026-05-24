@@ -91,3 +91,18 @@ function evenOrOddGroup(numbers) {
   return group;
 }
 console.log(evenOrOddGroup([1, 2, 3, 4, 5, 6]));
+
+console.log("\n");
+
+// counting words
+function countWord(sentence) {
+  const words = sentence.split(" ");
+  let totalWord = 0;
+
+  for (const word of words) {
+    totalWord++;
+  }
+
+  return totalWord;
+}
+console.log(countWord("heh, i am ownist"));
