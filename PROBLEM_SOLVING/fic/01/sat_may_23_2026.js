@@ -30,3 +30,18 @@ function checkEvenOrOdd(num) {
 }
 
 console.log(checkEvenOrOdd(52));
+
+console.log("\n");
+
+// count character
+function countChar(str) {
+  const totalChar = {};
+
+  for (const char of str) {
+    totalChar[char] = (totalChar[char] || 0) + 1;
+  }
+
+  return totalChar;
+}
+
+console.log(countChar("shahed"));
