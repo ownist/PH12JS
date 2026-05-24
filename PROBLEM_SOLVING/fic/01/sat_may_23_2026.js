@@ -68,3 +68,26 @@ function findMostFreqNumbers(nums) {
 }
 const input = [5, 5, 5, 2, 2];
 console.log(findMostFreqNumbers(input));
+
+console.log("\n");
+
+// even or odd group
+function evenOrOddGroup(numbers) {
+  const group = {
+    even: [],
+    odd: [],
+  };
+
+  for (const n of numbers) {
+    if (typeof n !== "number") continue;
+
+    if (n % 2 === 0) {
+      group.even.push(n);
+    } else {
+      group.odd.push(n);
+    }
+  }
+
+  return group;
+}
+console.log(evenOrOddGroup([1, 2, 3, 4, 5, 6]));
