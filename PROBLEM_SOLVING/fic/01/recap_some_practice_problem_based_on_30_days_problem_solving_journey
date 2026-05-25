@@ -141,3 +141,17 @@ function cToF(c) {
   return (c * 9) / 5 + 32;
 }
 console.log(cToF(30));
+
+console.log("\n");
+
+// Sum of Array Elements
+function sumOfArrElmnt(arr) {
+  let sum = 0;
+
+  for (const n of arr) {
+    sum += n;
+  }
+
+  return sum;
+}
+console.log(sumOfArrElmnt([1, 2, 3, 4, 5]));
