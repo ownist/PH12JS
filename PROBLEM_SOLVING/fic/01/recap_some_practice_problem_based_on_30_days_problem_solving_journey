@@ -132,3 +132,12 @@ function findTheLargestofThreeNumbers(x, y, z) {
   }
 }
 console.log(findTheLargestofThreeNumbers(5, 26, 9));
+
+console.log("\n");
+
+// Celsius to Fahrenheit
+function cToF(c) {
+  // formula: F = (C * 9/5) + 32
+  return (c * 9) / 5 + 32;
+}
+console.log(cToF(30));
