@@ -118,3 +118,17 @@ function isEvenOrIsOdd(num) {
   return `${num} is odd`;
 }
 console.log(isEvenOrIsOdd(42));
+
+console.log("\n");
+
+// Find the Largest of Three Numbers
+function findTheLargestofThreeNumbers(x, y, z) {
+  if (x > y && x > z) {
+    return `${x} is bigger than ${y} and ${z}`;
+  } else if (y > x && y > z) {
+    return `${y} is bigger than ${x} and ${z}`;
+  } else {
+    return `${z} is bigger than ${x} and ${y}`;
+  }
+}
+console.log(findTheLargestofThreeNumbers(5, 26, 9));
