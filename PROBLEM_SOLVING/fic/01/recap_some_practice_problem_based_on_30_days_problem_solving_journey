@@ -155,6 +155,19 @@ function sumOfArrElmnt(arr) {
   return sum;
 }
 console.log(sumOfArrElmnt([1, 2, 3, 4, 5]));
+// using for loop
+function sumOfArrElmntUsingForLoop(arr) {
+  let totalSum = 0;
+
+  // loop array
+  for (let i = 0; i < arr.length; i++) {
+    totalSum += arr[i];
+  }
+
+  // then return totalSum
+  return totalSum;
+}
+console.log(sumOfArrElmntUsingForLoop([1, 2, 3, 4, 5]));
 
 console.log("\n");
 
