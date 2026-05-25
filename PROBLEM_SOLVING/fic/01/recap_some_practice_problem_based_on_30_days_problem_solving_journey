@@ -106,3 +106,15 @@ function countWord(sentence) {
   return totalWord;
 }
 console.log(countWord("heh, i am ownist"));
+
+console.log("\n");
+
+// ১. জোড় নাকি বিজোড় সংখ্যা (Even or Odd Number)
+function isEvenOrIsOdd(num) {
+  if (num % 2 === 0) {
+    return `${num} is even`;
+  }
+
+  return `${num} is odd`;
+}
+console.log(isEvenOrIsOdd(42));
