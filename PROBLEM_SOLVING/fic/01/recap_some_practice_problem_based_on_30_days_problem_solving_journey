@@ -155,3 +155,18 @@ function sumOfArrElmnt(arr) {
   return sum;
 }
 console.log(sumOfArrElmnt([1, 2, 3, 4, 5]));
+
+console.log("\n");
+
+// Reverse a String
+function reverseString(str) {
+  let revStr = "";
+
+  for (let i = 0; i < str.length; i++) {
+    revStr = str[i] + revStr;
+  }
+
+  return revStr;
+}
+
+console.log(reverseString("hello"));
