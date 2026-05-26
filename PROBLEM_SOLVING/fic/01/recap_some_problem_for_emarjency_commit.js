@@ -183,3 +183,22 @@ function reverseString(str) {
 }
 
 console.log(reverseString("hello"));
+
+console.log("\n");
+
+// social media hastag generator
+function hashTagGenerator(str) {
+  if (str.length > 140 || str === "" || str.length === 0 || str === " ")
+    return false;
+
+  return (
+    "#" +
+    str
+      .split(" ")
+      .map((word) => {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      })
+      .join("")
+  );
+}
+console.log(hashTagGenerator("i am ownist"));
