@@ -202,3 +202,21 @@ function hashTagGenerator(str) {
   );
 }
 console.log(hashTagGenerator("i am ownist"));
+
+console.log("\n");
+
+// Duplicate Runner Tracker
+function duplicateRunnerTracker(arr) {
+  const duplicateRunnerTrackers = [];
+
+  for (const name of arr) {
+    if (!duplicateRunnerTrackers.includes(name)) {
+      duplicateRunnerTrackers.push(name);
+    } else {
+      duplicateRunnerTrackers.push(`${name} (Duplicate)`);
+    }
+  }
+
+  return duplicateRunnerTrackers;
+}
+console.log(duplicateRunnerTracker(["Anik", "Rahul", "Anik", "Sumi", "Rahul"]));
