@@ -220,3 +220,13 @@ function duplicateRunnerTracker(arr) {
   return duplicateRunnerTrackers;
 }
 console.log(duplicateRunnerTracker(["Anik", "Rahul", "Anik", "Sumi", "Rahul"]));
+
+console.log("\n");
+
+// Multiplication Table
+function multiplicationtable(num) {
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${num} x ${i} = ${num * i}`);
+  }
+}
+multiplicationtable(8);
