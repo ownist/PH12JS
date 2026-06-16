@@ -31,9 +31,13 @@
     />
   </head>
   <body class="bg-gray-100 w-full min-h-dvh">
-    <section class="bg-white px-4">
+    <section
+      class="bg-white rounded-bl-3xl rounded-br-3xl border-b border-b-zinc-950/10"
+    >
       <!-- navbar -->
-      <div class="py-4 flex items-center justify-between">
+      <div
+        class="py-4 flex items-center justify-between px-4 border-b border-b-zinc-950/10"
+      >
         <!-- dp and balance -->
         <div class="flex items-center gap-x-2">
           <!-- dp -->
@@ -57,7 +61,7 @@
         <!-- logout btn -->
         <div class="">
           <button
-            class="flex items-center gap-x-1 text-zinc-950/50 text-sm font-normal px-3 py-2.5 rounded-lg outline outline-zinc-950/10"
+            class="flex items-center gap-x-1 text-zinc-950/50 text-sm font-normal px-3 py-2.5 rounded-lg outline outline-zinc-950/10 active:bg-zinc-200"
           >
             <span>
               <i class="ri-logout-box-line"></i>
@@ -66,6 +70,15 @@
             Log Out
           </button>
         </div>
+      </div>
+
+      <!-- welcome section -->
+      <div class="px-4 py-6">
+        <h1 class="text-zinc-950 text-2xl font-bold">🔥 Welcome to Payoo!</h1>
+        <p class="text-zinc-950/50 text-base font-normal">
+          Enjoy easy and convenient financial services with us. Cashout charge
+          is low and effortable.
+        </p>
       </div>
     </section>
   </body>
