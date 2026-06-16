@@ -30,7 +30,43 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <h1>welcome to dashboard</h1>
+  <body class="bg-gray-100 w-full min-h-dvh">
+    <section class="bg-white px-4">
+      <!-- navbar -->
+      <div class="py-4 flex items-center justify-between">
+        <!-- dp and balance -->
+        <div class="flex items-center gap-x-2">
+          <!-- dp -->
+          <img
+            class="w-12 rounded-full"
+            src="./assets/images/profile_image_plcaholder.png"
+            alt="guest"
+          />
+
+          <!-- balance -->
+          <div class="">
+            <h3 class="text-zinc-950/90 text-lg font-extrabold">
+              $ <span>15000</span>
+            </h3>
+            <p class="text-zinc-950/50 text-sm font-normal">
+              Available Balance
+            </p>
+          </div>
+        </div>
+
+        <!-- logout btn -->
+        <div class="">
+          <button
+            class="flex items-center gap-x-1 text-zinc-950/50 text-sm font-normal px-3 py-2.5 rounded-lg outline outline-zinc-950/10"
+          >
+            <span>
+              <i class="ri-logout-box-line"></i>
+            </span>
+
+            Log Out
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
