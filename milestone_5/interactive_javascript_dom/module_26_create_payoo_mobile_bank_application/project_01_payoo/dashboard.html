@@ -196,5 +196,92 @@
         </div>
       </div>
     </section>
+
+    <!-- add money form -->
+    <section class="px-4 py-7 space-y-4">
+      <h1 class="text-zinc-950/90 text-lg font-semibold">Add Money</h1>
+
+      <form action="#" class="space-y-4 p-6 bg-white rounded-2xl">
+        <!-- input box -->
+        <div class="flex flex-col gap-y-3">
+          <label
+            for="select_a_bank"
+            class="text-zinc-950/70 text-base font-medium"
+            >Select a Bank</label
+          >
+
+          <select
+            required
+            class="text-zinc-950 text-base w-full font-light px-5 py-4 rounded-lg border-none outline-none bg-gray-100 focus:bg-gray-200 focus:border focus:border-zinc-500 appearance-none"
+          >
+            <option value="selected" selected disabled>Select bank</option>
+            <option value="islami_bank">Islami Bank</option>
+            <option value="dutch_bangla_bank">Dutch Bangla Bank</option>
+            <option value="agrani_bank">Agrani Bank</option>
+            <option value="city_touch_bank">City Touch</option>
+          </select>
+        </div>
+
+        <!-- input box -->
+        <div class="flex flex-col gap-y-3">
+          <label
+            for="bank_account_number"
+            class="text-zinc-950/70 text-base font-medium"
+            >Bank Account Number</label
+          >
+          <input
+            id="bank_account_number"
+            required
+            type="number"
+            name="bank_account_number"
+            class="text-zinc-950 text-base w-full font-light px-5 py-4 rounded-lg border-none outline-none bg-gray-100 focus:bg-gray-200 focus:border focus:border-zinc-500"
+            placeholder="Enter 11 digit account number"
+          />
+        </div>
+
+        <!-- input box -->
+        <div class="flex flex-col gap-y-3">
+          <label
+            for="ammount_to_add"
+            class="text-zinc-950/70 text-base font-medium"
+            >Ammount to Add</label
+          >
+          <input
+            id="ammount_to_add"
+            required
+            type="number"
+            name="ammount_to_add"
+            class="text-zinc-950 text-base w-full font-light px-5 py-4 rounded-lg border-none outline-none bg-gray-100 focus:bg-gray-200 focus:border focus:border-zinc-500"
+            placeholder="Add ammount to withdraw"
+          />
+        </div>
+
+        <!-- input box -->
+        <div class="flex flex-col gap-y-3">
+          <label
+            for="four_digit_pin"
+            class="text-zinc-950/70 text-base font-medium"
+            >Pin Number</label
+          >
+          <input
+            id="user_four_digit_pin"
+            required
+            type="number"
+            name="four_digit_pin"
+            class="text-zinc-950 text-base w-full font-light px-5 py-4 rounded-lg border-none outline-none bg-gray-100 focus:bg-gray-200 focus:border focus:border-zinc-500"
+            placeholder="Enter 4 digit pin number"
+          />
+        </div>
+
+        <!-- continue button -->
+        <button
+          id="continue_btn"
+          type="submit"
+          class="text-white text-base font-semibold px-4 py-4 rounded-full bg-blue-500 hover:bg-blue-400 w-full"
+        >
+          Continue
+        </button>
+      </form>
+    </section>
   </body>
 </html>
