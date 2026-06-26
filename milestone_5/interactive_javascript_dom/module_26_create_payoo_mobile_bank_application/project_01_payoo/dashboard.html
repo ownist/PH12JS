@@ -31,8 +31,52 @@
     />
   </head>
   <body class="bg-gray-100 w-full min-h-dvh">
+    <!-- for desktop device -->
     <section
-      class="bg-white rounded-bl-3xl rounded-br-3xl border-b border-b-zinc-950/10"
+      class="hidden sm:flex items-center justify-center w-full min-h-dvh p-4"
+    >
+      <div
+        class="flex flex-col justify-center mx-auto items-center text-center space-y-8 max-w-md"
+      >
+        <img width="80" src="./assets/images/logo.png" alt="logo" />
+
+        <div class="space-y-4">
+          <h3
+            class="px-5 py-2 rounded-full bg-blue-600 text-white w-max mx-auto"
+          >
+            Small Screen Required
+          </h3>
+
+          <p class="text-zinc-500 text-2xl">
+            Your screen is too much larger for an optimal experience.
+          </p>
+
+          <div
+            class="space-y-2 bg-gray-100 px-4 py-5 rounded-lg border border-zinc-200"
+          >
+            <div
+              class="size-24 bg-blue-100 rounded-full grid place-items-center mx-auto"
+            >
+              <span class="">
+                <i class="ri-smartphone-line text-5xl text-blue-400"></i>
+              </span>
+            </div>
+
+            <div class="">
+              <h4 class="font-medium text-xl">Maximum width: 640px</h4>
+              <p class="text-base text-zinc-500">
+                Please use a device with a smaller screen for the best
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- dashboard -->
+    <section
+      class="bg-white rounded-bl-3xl rounded-br-3xl border-b border-b-zinc-950/10 sm:hidden"
     >
       <!-- navbar -->
       <div
@@ -75,7 +119,7 @@
       <div class="py-6">
         <!-- welcome section -->
         <div class="px-4">
-          <h1 class="text-zinc-950 text-2xl font-bold">🔥 Welcome to Payoo!</h1>
+          <h1 class="text-zinc-950 text-2xl font-bold">Welcome to Payoo!</h1>
           <p class="text-zinc-950/50 text-base font-normal">
             Enjoy easy and convenient financial services with us. Cashout charge
             is low and effortable.
