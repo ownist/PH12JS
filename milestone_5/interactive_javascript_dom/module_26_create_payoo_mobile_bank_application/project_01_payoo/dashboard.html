@@ -141,6 +141,7 @@
 
           <!-- single card -->
           <div
+            id="cash_out_card"
             class="flex flex-col items-center justify-center text-center gap-y-2 px-3 py-5 rounded-xl border border-zinc-950/10 transition-all duration-200 active:bg-zinc-200 select-none"
           >
             <!-- category logo -->
@@ -198,7 +199,7 @@
     </section>
 
     <!-- add money form -->
-    <section class="px-4 py-7 space-y-4">
+    <section id="add_money_form" class="px-4 py-7 space-y-4">
       <h1 class="text-zinc-950/90 text-lg font-semibold">Add Money</h1>
 
       <form action="#" class="space-y-4 p-6 bg-white rounded-2xl">
@@ -285,7 +286,11 @@
       </form>
     </section>
 
+    <!-- cash out -->
+    <section class="hidden" id="cash_out_section">cash out</section>
+
     <!-- connect add money js file -->
     <script src="./assets/js/add_money.js"></script>
+    <script src="./assets/js/toggle.js"></script>
   </body>
 </html>
