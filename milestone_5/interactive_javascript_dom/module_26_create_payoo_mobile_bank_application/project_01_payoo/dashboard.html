@@ -255,7 +255,7 @@
             type="number"
             name="ammount_to_add"
             class="text-zinc-950 text-base w-full font-light px-5 py-4 rounded-lg border-none outline-none bg-gray-100 focus:bg-gray-200 focus:border focus:border-zinc-500"
-            placeholder="Add ammount to withdraw"
+            placeholder="Add ammount to add"
           />
         </div>
 
@@ -288,7 +288,71 @@
     </section>
 
     <!-- cash out -->
-    <section class="hidden" id="cash_out_parent">cash out</section>
+    <section id="cash_out_parent" class="px-4 py-7 space-y-4 hidden">
+      <h1 class="text-zinc-950/90 text-lg font-semibold">Cash Out</h1>
+
+      <form action="#" class="space-y-4 p-6 bg-white rounded-2xl">
+        <!-- input box -->
+        <div class="flex flex-col gap-y-3">
+          <label
+            for="agent_number"
+            class="text-zinc-950/70 text-base font-medium"
+            >Agent Number</label
+          >
+          <input
+            id="agent_number"
+            required
+            type="number"
+            name="agent_number"
+            class="text-zinc-950 text-base w-full font-light px-5 py-4 rounded-lg border-none outline-none bg-gray-100 focus:bg-gray-200 focus:border focus:border-zinc-500"
+            placeholder="Enter 11 digit number"
+          />
+        </div>
+
+        <!-- input box -->
+        <div class="flex flex-col gap-y-3">
+          <label
+            for="ammount_to_withdraw"
+            class="text-zinc-950/70 text-base font-medium"
+            >Ammount</label
+          >
+          <input
+            id="ammount_to_withdraw"
+            required
+            type="number"
+            name="ammount_to_withdraw"
+            class="text-zinc-950 text-base w-full font-light px-5 py-4 rounded-lg border-none outline-none bg-gray-100 focus:bg-gray-200 focus:border focus:border-zinc-500"
+            placeholder="Enter ammount to withdraw"
+          />
+        </div>
+
+        <!-- input box -->
+        <div class="flex flex-col gap-y-3">
+          <label
+            for="four_digit_pin_number"
+            class="text-zinc-950/70 text-base font-medium"
+            >Pin Number</label
+          >
+          <input
+            id="four_digit_pin_number"
+            required
+            type="number"
+            name="four_digit_pin_number"
+            class="text-zinc-950 text-base w-full font-light px-5 py-4 rounded-lg border-none outline-none bg-gray-100 focus:bg-gray-200 focus:border focus:border-zinc-500"
+            placeholder="Enter 4 digit pin number"
+          />
+        </div>
+
+        <!-- add money button -->
+        <button
+          id="add_money_btn"
+          type="submit"
+          class="text-white text-base font-semibold px-4 py-4 rounded-full bg-blue-500 hover:bg-blue-400 w-full"
+        >
+          Withdraw Money
+        </button>
+      </form>
+    </section>
 
     <!-- connect add money js file -->
     <script src="./assets/js/add_money.js"></script>
