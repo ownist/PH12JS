@@ -1,8 +1,10 @@
-/* google font: roboto */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* google font: Old Standard TT */
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 
-body {
-  font-family: "Roboto", sans-serif;
+body,
+input,
+button {
+  font-family: "Old Standard TT", serif;
 }
 
 input,
