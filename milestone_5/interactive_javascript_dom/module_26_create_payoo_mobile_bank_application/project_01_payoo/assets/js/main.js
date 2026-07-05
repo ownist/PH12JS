@@ -1,10 +1,14 @@
-// continue button
+/**
+ * ================
+ * user login functionality
+ * ================
+ */
 document.getElementById("continue_btn").addEventListener("click", function (e) {
   e.preventDefault();
 
   // original phone numbers
-  const main_phone_number = "01912345678";
-  const main_four_digit_pin = "12345";
+  const main_phone_number = "01234567891";
+  const main_four_digit_pin = "1234";
 
   // user phone number
   const user_phone_number = document.getElementById("user_mobile_number").value;
