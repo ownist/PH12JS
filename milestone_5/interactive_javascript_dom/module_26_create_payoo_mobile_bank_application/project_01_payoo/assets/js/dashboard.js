@@ -82,9 +82,9 @@ document.getElementById("withdraw_btn").addEventListener("click", function (e) {
   const ammountToWithdraw = parseInt(
     document.getElementById("ammount_to_withdraw").value,
   );
-  const fourDigitPinNumber = parseInt(
-    document.getElementById("four_digit_pin_number").value,
-  );
+  const fourDigitPinNumber = document.getElementById(
+    "four_digit_pin_number",
+  ).value;
 
   // validate agent number
   if (agentNumber.length < 11) {
