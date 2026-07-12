@@ -13,6 +13,18 @@ function handleToggle(id) {
   document.getElementById(id).style.display = "block";
 }
 
+function handleCategoryCardColor(id) {
+  const categoryCard = document.getElementsByClassName("category_card");
+
+  for (const category of categoryCard) {
+    category.classList.remove("bg-blue-600/5", "border-blue-600");
+    category.classList.add("border-zinc-950/10");
+  }
+
+  document.getElementById(id).classList.remove("border-zinc-950/10");
+  document.getElementById(id).classList.add("bg-blue-600/5", "border-blue-600");
+}
+
 /**
  * ==================
  * toggle functionality
@@ -22,11 +34,13 @@ document // add money card
   .getElementById("add_money_card")
   .addEventListener("click", function () {
     handleToggle("add_money_form_parent");
+    handleCategoryCardColor("add_money_card");
   });
 
 // cash out card
 document.getElementById("cash_out_card").addEventListener("click", function () {
   handleToggle("cash_out_parent");
+  handleCategoryCardColor("cash_out_card");
 });
 
 // transfer money card
@@ -34,6 +48,7 @@ document
   .getElementById("transfer_money_card")
   .addEventListener("click", function () {
     handleToggle("transfer_money_form_parent");
+    handleCategoryCardColor("transfer_money_card");
   });
 
 // get bonus card
@@ -41,11 +56,13 @@ document
   .getElementById("get_bonus_card")
   .addEventListener("click", function () {
     handleToggle("get_bonus_form_parent");
+    handleCategoryCardColor("get_bonus_card");
   });
 
 // pay bill card
 document.getElementById("pay_bill_card").addEventListener("click", function () {
   handleToggle("pay_bill_form_parent");
+  handleCategoryCardColor("pay_bill_card");
 });
 
 // transactions card
@@ -53,6 +70,7 @@ document
   .getElementById("transactions_card")
   .addEventListener("click", function () {
     handleToggle("transactions_form_parent");
+    handleCategoryCardColor("transactions_card");
   });
 
 /**
