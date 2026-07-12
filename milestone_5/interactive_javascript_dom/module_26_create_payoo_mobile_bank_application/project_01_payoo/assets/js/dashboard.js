@@ -18,7 +18,7 @@ function handleToggle(id) {
  * toggle functionality
  * ==================
  */
-document
+document // add money card
   .getElementById("add_money_card")
   .addEventListener("click", function () {
     handleToggle("add_money_form_parent");
@@ -34,6 +34,25 @@ document
   .getElementById("transfer_money_card")
   .addEventListener("click", function () {
     handleToggle("transfer_money_form_parent");
+  });
+
+// get bonus card
+document
+  .getElementById("get_bonus_card")
+  .addEventListener("click", function () {
+    handleToggle("get_bonus_form_parent");
+  });
+
+// pay bill card
+document.getElementById("pay_bill_card").addEventListener("click", function () {
+  handleToggle("pay_bill_form_parent");
+});
+
+// transactions card
+document
+  .getElementById("transactions_card")
+  .addEventListener("click", function () {
+    handleToggle("transactions_form_parent");
   });
 
 /**

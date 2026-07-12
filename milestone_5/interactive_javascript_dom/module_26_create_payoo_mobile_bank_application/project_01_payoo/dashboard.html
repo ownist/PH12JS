@@ -166,6 +166,7 @@
 
           <!-- single card -->
           <div
+            id="get_bonus_card"
             class="flex flex-col items-center justify-center text-center gap-y-2 px-3 py-5 rounded-xl border border-zinc-950/10 transition-all duration-200 active:bg-zinc-200 select-none"
           >
             <!-- category logo -->
@@ -177,6 +178,7 @@
 
           <!-- single card -->
           <div
+            id="pay_bill_card"
             class="flex flex-col items-center justify-center text-center gap-y-2 px-3 py-5 rounded-xl border border-zinc-950/10 transition-all duration-200 active:bg-zinc-200 select-none"
           >
             <!-- category logo -->
@@ -188,6 +190,7 @@
 
           <!-- single card -->
           <div
+            id="transactions_card"
             class="flex flex-col items-center justify-center text-center gap-y-2 px-3 py-5 rounded-xl border border-zinc-950/10 transition-all duration-200 active:bg-zinc-200 select-none"
           >
             <!-- category logo -->
@@ -288,7 +291,7 @@
       </form>
     </section>
 
-    <!-- cash out -->
+    <!-- cash out form -->
     <section id="cash_out_parent" class="forms px-4 py-7 space-y-4 hidden">
       <h1 class="text-zinc-950/90 text-lg font-semibold">Cash Out</h1>
 
@@ -355,7 +358,7 @@
       </form>
     </section>
 
-    <!-- cash out -->
+    <!-- transfer money form -->
     <section
       id="transfer_money_form_parent"
       class="forms px-4 py-7 space-y-4 hidden"
@@ -363,11 +366,28 @@
       <h1 class="text-zinc-950/90 text-lg font-semibold">Transfer Money</h1>
     </section>
 
+    <!-- get bonus form -->
+    <section
+      id="get_bonus_form_parent"
+      class="forms px-4 py-7 space-y-4 hidden"
+    >
+      <h1 class="text-zinc-950/90 text-lg font-semibold">Get Bonus</h1>
+    </section>
+
+    <!-- pay bill form -->
+    <section id="pay_bill_form_parent" class="forms px-4 py-7 space-y-4 hidden">
+      <h1 class="text-zinc-950/90 text-lg font-semibold">Pay Bill</h1>
+    </section>
+
+    <!-- pay bill form -->
+    <section
+      id="transactions_form_parent"
+      class="forms px-4 py-7 space-y-4 hidden"
+    >
+      <h1 class="text-zinc-950/90 text-lg font-semibold">Transactions</h1>
+    </section>
+
     <!-- connect add money js file -->
     <script src="./assets/js/dashboard.js"></script>
-
-    <!-- <script src="./assets/js/add_money.js"></script>
-    <script src="./assets/js/toggle.js"></script>
-    <script src="./assets/js/withdraw_money.js"></script> -->
   </body>
 </html>
