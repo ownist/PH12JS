@@ -1,4 +1,19 @@
 /**
+ * ===================
+ * # resuseable functions
+ * ===================
+ */
+function handleToggle(id) {
+  const forms = document.getElementsByClassName("forms");
+
+  for (const from of forms) {
+    from.style.display = "none";
+  }
+
+  document.getElementById(id).style.display = "block";
+}
+
+/**
  * ==================
  * toggle functionality
  * ==================
@@ -6,15 +21,20 @@
 document
   .getElementById("add_money_card")
   .addEventListener("click", function () {
-    document.getElementById("add_money_form_parent").style.display = "block";
-    document.getElementById("cash_out_parent").style.display = "none";
+    handleToggle("add_money_form_parent");
   });
 
 // cash out card
 document.getElementById("cash_out_card").addEventListener("click", function () {
-  document.getElementById("cash_out_parent").style.display = "block";
-  document.getElementById("add_money_form_parent").style.display = "none";
+  handleToggle("cash_out_parent");
 });
+
+// transfer money card
+document
+  .getElementById("transfer_money_card")
+  .addEventListener("click", function () {
+    handleToggle("transfer_money_form_parent");
+  });
 
 /**
  * ===================
