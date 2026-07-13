@@ -1,3 +1,6 @@
+// transaction history
+const transactrionData = [];
+
 /**
  * ===================
  * # resuseable functions
@@ -119,6 +122,15 @@ document
 
     // set balance & update on dom
     document.getElementById("available_balance").innerText = totalAmmout;
+
+    // add money history
+    const addMoneyData = {
+      name: "Add Money",
+      date: new Date().toDateString(),
+    };
+
+    // push add money data into transaction history / data
+    transactrionData.push(addMoneyData);
   });
 
 /**
@@ -159,4 +171,55 @@ document.getElementById("withdraw_btn").addEventListener("click", function (e) {
 
   document.getElementById("available_balance").innerText =
     totalAvailableBalance;
+
+  // cash out history
+  const cashoutData = {
+    name: "Cashout",
+    date: new Date().toDateString(),
+  };
+
+  // push cashout data into transaction history / data
+  transactrionData.push(cashoutData);
 });
+
+/**
+ * =======================
+ * # transaction history
+ * =======================
+ */
+document
+  .getElementById("transactions_card")
+  .addEventListener("click", function () {
+    const transactionContainer = document.getElementById(
+      "transaction_container",
+    );
+    transactionContainer.innerHTML = "";
+
+    // loop through transactiondata
+    for (const tData of transactrionData) {
+      const div = document.createElement("div");
+      div.innerHTML = `
+      <!-- cards -->
+        <div
+          class="flex items-center gap-x-2 px-4 py-3 bg-white rounded-xl border border-zinc-950/10"
+        >
+          <!-- img -->
+          <div class="p-2.5 bg-zinc-950/5 rounded-full">
+            <img width="24" src="./assets/images/opt-1.png" alt="icon" />
+          </div>
+
+          <div class="-space-y-1.5">
+            <p class="text-zinc-950/70 text-base font-semibold">
+              ${tData.name}
+            </p>
+            <span class="text-zinc-950/70 text-xs font-normal"
+              >${tData.date}</span
+            >
+          </div>
+        </div>
+      `;
+
+      // append parent
+      transactionContainer.appendChild(div);
+    }
+  });
