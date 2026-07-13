@@ -111,6 +111,12 @@ document
       return;
     }
 
+    // validate ammount
+    if (getUserAmmoutToAdd <= 0) {
+      alert("Invalid Ammount");
+      return;
+    }
+
     // validate pin number
     if (getUserFourDigitPinNumber !== pinNumber) {
       alert("Invalid pin number");
@@ -158,6 +164,12 @@ document.getElementById("withdraw_btn").addEventListener("click", function (e) {
   // validate agent number
   if (agentNumber.length < 11) {
     alert("Invalid Agent Number");
+    return;
+  }
+
+  // validate ammount
+  if (ammountToWithdraw <= 0 || ammountToWithdraw > availableBalance) {
+    alert("Invalid Ammount");
     return;
   }
 
