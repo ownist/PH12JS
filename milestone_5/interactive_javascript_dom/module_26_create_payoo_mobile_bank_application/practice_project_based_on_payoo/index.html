@@ -20,7 +20,31 @@
     />
   </head>
   <body>
-    <h1 class="text-center p-4 text-2xl bg-zinc-800 text-slate-200">Practoo</h1>
+    <!-- ============ large device alert start ================= -->
+    <section
+      class="w-full min-h-dvh hidden sm:flex items-center justify-center"
+    >
+      <div
+        class="max-w-xs text-center space-y-4 bg-gray-100 border-zinc-200 p-4 rounded-xl"
+      >
+        <span class="text-5xl text-red-500">
+          <i class="ri-error-warning-line"></i>
+        </span>
+
+        <h2 class="text-red-500 text-2xl font-semibold">
+          Small Screen Required
+        </h2>
+
+        <div class="text-sm font-normal text-zinc-950/60">
+          <p>
+            Your screen is too much larger for an optimal experience.
+            <strong>Maximum width: 640px.</strong> Please use a device with a
+            smaller screen for the best experience.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ============ large device alert end ================= -->
 
     <!-- connect script file -->
     <script src="./assets/js/app.js"></script>
