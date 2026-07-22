@@ -65,16 +65,27 @@
             id="username"
             placeholder="Username"
           />
-          <input
-            required
-            autocomplete="off"
-            class="bg-neutral-100 border border-stone-300 w-full rounded-md px-4 py-3.5 text-zinc-800 text-base font-normal placeholder:text-zinc-500"
-            type="password"
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-          />
+          <div class="relative">
+            <input
+              required
+              autocomplete="off"
+              class="bg-neutral-100 border border-stone-300 w-full rounded-md px-4 py-3.5 text-zinc-800 text-base font-normal placeholder:text-zinc-500"
+              type="password"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+
+            <!-- forgott password -->
+            <div class="w-full text-right">
+              <a
+                class="text-blue-500 text-xs font-semibold mt-2"
+                href="./index.html"
+                >Forgotten Password?</a
+              >
+            </div>
+          </div>
 
           <!-- continue button -->
           <div class="">
